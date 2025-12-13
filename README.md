@@ -1,4 +1,5 @@
-# Pneumonia Detection from Chest X-Rays with Interpretability Analysis
+# X-Ray-Pneumonia-Screening-with-Deep-Learning-and-Trustworthy-Interpretability-Mechanisms
+
 
 This repository presents a research-oriented deep learning framework for detecting pneumonia from pediatric chest X-ray images, with a strong emphasis on model interpretability, bias detection, and clinical trustworthiness rather than accuracy alone.  
 The project systematically demonstrates how high-performing convolutional neural networks (CNNs) can rely on spurious correlations and shortcut learning, and how Explainable AI (XAI) techniques can be used to uncover and mitigate such behavior.
