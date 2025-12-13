@@ -171,8 +171,8 @@ The DenseNet interpretability pipeline is highlighted as the primary contributio
 ---
 
 ## Author
-
-Undergraduate researcher with interests in medical computer vision, explainable AI, and robust machine learning systems.
+Gaurav Hadavale
+Undergraduate Student with interests in computer vision, explainable AI, and robust machine learning systems.
 
 ---
 
