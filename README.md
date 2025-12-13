@@ -140,7 +140,42 @@ This demonstrates that **interpretability-driven auditing can meaningfully impro
 
 The DenseNet interpretability pipeline is highlighted as the primary contribution due to its combination of performance, explainability, and bias mitigation.
 
+
 ---
 
-## Repository Structure
+## Limitations
+
+- Experiments are limited to a single pediatric dataset
+- Only AP-view radiographs were considered
+- RISE explanations are computationally expensive and evaluated on selected samples
+- Explainability metrics depend on saliency post-processing thresholds
+
+---
+
+## Future Work
+
+- Lung segmentation prior to classification
+- Evaluation on multi-center and adult datasets
+- Model calibration and uncertainty estimation
+- Attention-based or hybrid architectures
+- Extension to multi-class pneumonia subtypes
+
+---
+
+## References
+
+- Kermany et al., *Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning*, Cell (2018)
+- Selvaraju et al., *Grad-CAM: Visual Explanations from Deep Networks*, ICCV (2017)
+- Petsiuk et al., *RISE: Randomized Input Sampling for Explanation*, BMVC (2018)
+
+---
+
+## Author
+
+Undergraduate researcher with interests in medical computer vision, explainable AI, and robust machine learning systems.
+
+---
+
+Note: This project prioritizes interpretability, robustness, and clinical reliability over leaderboard-style performance metrics.
+
 
