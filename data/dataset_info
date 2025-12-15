@@ -1,0 +1,49 @@
+Dataset Information
+Dataset Description
+
+The dataset used in this study consists of pediatric chest X-ray images curated for the task of pneumonia detection. The images are organized into three predefined subsets—training, validation, and test—with each subset containing two classes: Normal and Pneumonia. In total, the dataset comprises 5,863 anterior–posterior (AP) chest radiographs in JPEG format.
+
+The dataset was originally introduced by Kermany et al. (2018) and has been widely used as a benchmark for deep learning–based pneumonia classification. The images were collected retrospectively from pediatric patients aged one to five years at Guangzhou Women and Children’s Medical Center, Guangzhou, China. All chest X-rays were acquired as part of routine clinical care rather than for research-specific purposes, reflecting real-world imaging conditions.
+
+Diagnostic Labels and Quality Control
+
+Each chest radiograph was initially screened for image quality, and low-quality or unreadable scans were excluded prior to dataset release. The remaining images were independently labeled by two expert physicians to determine the presence or absence of pneumonia. To further minimize annotation errors, the evaluation (test) set was reviewed by a third expert physician, ensuring high label reliability and consistency.
+
+Radiographic manifestations of pneumonia in the dataset include both lobar consolidation patterns, commonly associated with bacterial pneumonia, and diffuse interstitial patterns, more typical of viral pneumonia. Normal images depict clear lung fields without abnormal opacification. These variations introduce realistic diagnostic complexity and make the dataset suitable for evaluating both classification performance and model robustness.
+
+Dataset Organization
+
+The dataset follows a structured directory layout:
+
+train/
+
+val/
+
+test/
+
+Each directory contains two subfolders:
+
+NORMAL/
+
+PNEUMONIA/
+
+This organization enables straightforward use with standard deep learning data loaders and ensures consistent experimental protocols across studies.
+
+Licensing and Access
+
+The dataset is publicly available and distributed under the Creative Commons Attribution 4.0 (CC BY 4.0) license, allowing free use, modification, and redistribution with appropriate attribution.
+
+Dataset URL: https://data.mendeley.com/datasets/rscbjbr9sj/2
+
+License: CC BY 4.0
+
+Citation
+
+If this dataset is used, the following citation should be included:
+
+Kermany, D. S., Goldbaum, M., Cai, W., Valentim, C. C. S., Liang, H., Baxter, S. L., et al. (2018). Identifying medical diagnoses and treatable diseases by image-based deep learning. Cell, 172(5), 1122–1131.
+https://doi.org/10.1016/j.cell.2018.02.010
+
+Notes on Dataset Limitations
+
+Although the dataset is carefully curated and clinically validated, it is derived from a single medical center and focuses exclusively on pediatric patients. As a result, model performance may not directly generalize to adult populations or images acquired under different institutional protocols. These limitations motivate the use of interpretability analysis and causal auditing to assess model reliability beyond aggregate performance metrics.
