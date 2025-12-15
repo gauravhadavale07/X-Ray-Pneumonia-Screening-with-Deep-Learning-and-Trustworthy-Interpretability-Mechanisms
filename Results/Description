@@ -1,0 +1,53 @@
+# Results Summary
+
+This directory contains the final, publication-ready results generated from all experimental notebooks in this project. The files stored here represent the consolidated outcomes used for quantitative evaluation, interpretability analysis, and model comparison in the final report.
+
+The results are organized into tables and figures to clearly separate numerical metrics from visual evidence.
+
+---
+
+## Tables
+
+The `tables/` subdirectory contains CSV files summarizing the key quantitative findings:
+
+- `performance_metrics.csv`  
+  Final classification performance of the DenseNet model, including AUROC, accuracy, precision, recall, specificity, and F1-score.
+
+- `pre_vs_post_audit_metrics.csv`  
+  Comparison of model performance before and after interpretability-driven auditing, highlighting changes in sensitivity, specificity, and false positive rates.
+
+- `faithfulness_sparsity_comparison.csv`  
+  Quantitative evaluation of explanation quality using faithfulness and sparsity metrics for GradCAM++, RISE, and Ablation-based methods.
+
+- `densenet_vs_resnet_comparison.csv`  
+  Side-by-side comparison of DenseNet and ResNet (ResNet-34 and ResNet-50) models, including performance metrics and error characteristics.
+
+---
+
+## Figures
+
+The `figures/` subdirectory contains cleaned and selected visual outputs used in the final report:
+
+- `roc_curves.png`  
+  Receiver Operating Characteristic (ROC) curves for DenseNet and ResNet models.
+
+- `confusion_matrices.png`  
+  Confusion matrices illustrating error distributions across different architectures.
+
+- `pre_audit_saliency_maps.png`  
+  GradCAM++ and RISE visualizations from the pre-audit model, demonstrating shortcut learning behavior.
+
+- `post_audit_saliency_maps.png`  
+  Saliency maps after interpretability-driven mitigation, showing improved attention alignment with lung regions.
+
+- `shortcut_learning_examples.png`  
+  Visual examples of causal shortcut experiments, including radiographic marker injection and removal.
+
+- `error_analysis_examples.png`  
+  High-confidence false positive cases with corresponding saliency maps used for failure mode analysis.
+
+---
+
+## Notes
+
+All files in this directory are derived from experiments documented in the `notebooks/` directory and are intended to be directly referenced in reports, presentations, and publications. Raw experimental outputs and intermediate files are stored separately under the `experiments/` directory.
